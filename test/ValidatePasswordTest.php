@@ -8,7 +8,7 @@
 		}
 
 		public function testFail(){
-			$this->assertTrue(true, "nix ist cool!");
+			$this->assertTrue(false, "nix ist cool!");
 		}
 
 		public function testFail2(){
