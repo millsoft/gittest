@@ -6,4 +6,10 @@
 			$valPass = new ValidatePassword();
 			$this->assertFalse($valPass->validLength('1234'));
 		}
+
+		public function testFail(){
+			$this->assertFalse(false);
+		}
+
+
 	}
