@@ -8,7 +8,7 @@
 		}
 
 		public function testFail(){
-			$this->assertFalse(false);
+			$this->assertTrue(false);
 		}
 
 
