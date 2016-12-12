@@ -15,6 +15,4 @@
 			$this->assertTrue(true, "Alles Cool");
 		}
 
-
-
 	}
