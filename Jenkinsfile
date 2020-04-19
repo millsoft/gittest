@@ -15,6 +15,7 @@ pipeline {
         echo 'Hello World'
         sh '''pwd
 whoami
+uptime
 node --version
 ls -la'''
       }
