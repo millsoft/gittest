@@ -1,5 +1,3 @@
-CODE_CHANGES = getGitChanges()
-
 pipeline {
   agent any
   environment {
@@ -11,11 +9,6 @@ pipeline {
     }
   stages {
     stage('someTest') {
-      when {
-        expression {
-          BRANCH_NAME == 'master'
-        }
-      }
       steps {
         echo "Building version ${VERSION}"
         echo "${params.Greeting} World!"
