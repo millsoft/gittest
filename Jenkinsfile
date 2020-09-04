@@ -16,7 +16,6 @@ pipeline {
         sh '''pwd
 whoami
 uptime
-node --version
 ls -la'''
       }
     }
