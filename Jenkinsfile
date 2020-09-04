@@ -27,10 +27,4 @@ ls -la'''
     }
 
   }
-
-  post {
-    always {
-      echo 'DONE!!!!!!'
-    }
-  }
 }
