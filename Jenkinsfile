@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    docker { image 'php' }
+  }
   environment {
     VERSION = '1.0.0'
     SERVER_CREDENTIALS = credentials('ssh_piv_stage')
@@ -13,6 +15,7 @@ pipeline {
         echo "Building version ${VERSION}"
         echo "${params.Greeting} World!"
         echo "Server credentials = ${SERVER_CREDENTIALS}"
+        sh 'php --version'
       }
     }
     stage('Check') {
