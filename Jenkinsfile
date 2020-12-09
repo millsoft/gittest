@@ -3,7 +3,7 @@ pipeline {
     docker { image 'php' }
   }
   environment {
-    VERSION = '1.0.0'
+    VERSION = '1.0.1'
     SERVER_CREDENTIALS = credentials('ssh_piv_stage')
   }
     parameters {
