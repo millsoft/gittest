@@ -27,10 +27,6 @@ uptime
 ls -la'''
       }
     }
-    stage('PhpTest') {
-      steps {
-        sh 'php --version'
-      }
-    }
+
   }
 }
