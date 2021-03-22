@@ -23,9 +23,14 @@ pipeline {
         echo 'Preparing Stuff'
         echo 'Hello World'
         sh '''pwd
-whoami
 uptime
 ls -la'''
+      }
+    }
+
+    stage('Php Test') {
+      steps {
+        sh 'php --version'
       }
     }
 
