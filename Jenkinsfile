@@ -16,6 +16,7 @@ pipeline {
         echo "${params.Greeting} World!"
         echo "Server credentials = ${SERVER_CREDENTIALS}"
         sh 'php --version'
+        sh 'ls -lah /'
       }
     }
     stage('Check') {
