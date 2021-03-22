@@ -24,7 +24,6 @@ pipeline {
         echo 'Preparing Stuff'
         echo 'Hello World'
         sh '''pwd
-uptime
 ls -la'''
       }
     }
