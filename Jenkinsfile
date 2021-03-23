@@ -30,9 +30,7 @@ ls -la'''
     stage('SSHtest') {
       steps {
         sshagent(credentials : ['jenkins-pem']) {
-          sh "pwd"
-          sh "ls -lah"
-          sh "ls /"
+          sh "ssh root@vm-dev ls"
         }
       }
     }
