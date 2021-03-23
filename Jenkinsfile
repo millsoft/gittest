@@ -27,6 +27,12 @@ pipeline {
 ls -la'''
       }
     }
-
+    stage('SSHtest') {
+      steps {
+        sshagent(credentials : ['jenkins-pem']) {
+          sh "echo pwd"
+        }
+      }
+    }
   }
 }
