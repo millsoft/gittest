@@ -1,7 +1,4 @@
 pipeline {
-  agent {
-    docker { image 'php' }
-  }
   environment {
     VERSION = '1.0.4'
     SERVER_CREDENTIALS = credentials('ssh_piv_stage')
